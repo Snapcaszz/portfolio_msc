@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <h1>Matheus Singh Cardoso</h1>
+        <nav class="nav">
+            <a class="nav__link {{ 'nav__link--active' if request.path == url_for('home') }}" href="{{ url_for('home') }}">Projects</a>
+            <a class="nav__link {{ 'nav__link--active' if request.path == url_for('about') }}" href="{{ url_for('about') }}">About</a>
+            <a class="nav__link {{ 'nav__link--active' if request.path == url_for('contact') }}" href="{{ url_for('contact') }}">Contact</a>
+        </nav>
     </header>
     {% block content %}
     {% endblock %}
