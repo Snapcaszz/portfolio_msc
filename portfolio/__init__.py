@@ -28,6 +28,14 @@ projects = [
         "slug": "api-docs",
         "prod": "#",
     },
+        {
+        "name": "REST API Documentation with Postman and Swagger",
+        "thumb": "img/rest-api-docs.png",
+        "hero": "img/rest-api-docs.png",
+        "categories": ["writing"],
+        "slug": "api-docs",
+        "prod": "#",
+    },
 ]
 
 slug_to_project = {project['slug']: project for project in projects}
