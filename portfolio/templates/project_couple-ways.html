@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="main main--project">
+    <div>
+        <img class="hero" src="{{ url_for('static', filename=project['hero']) }}"
+            alt="A young lady standing in front of the ocean while a plane goes by!." />
+
+        <article class="project">
+            <article class="project__content">
+                <h2 class="project__heading">{{ project['name'] }}</h2>
+
+                <p>
+                    Couple Ways is a dynamic web application designed to provide a way
+                    to plan and organize our journeys. This project showcases my skills in full-stack development,
+                    featuring a user-friendly interface with dark mode capabilities, responsive design, and robust trip
+                    management functionalities.
+                </p>
+                <p>
+                    From the intuitive navigation bar to the seamless trip addition feature, Couple Ways offers a
+                    comprehensive solution for users to effortlessly plan and customize their travel experiences. Dive
+                    into the details of each trip with the responsive page design, incorporating features such as
+                    pricing information, photo uploads, YouTube video integration, and even a savings plans calculator
+                    for financial planning.
+                </p>
+                <p>
+                    The project goes beyond basic functionality with a simulated trip budget feature and user
+                    authentication for personalized trip management. Whether you're a solo adventurer or planning with a
+                    partner, Couple Ways ensures a personalized and secure journey from start to finish.
+                </p>
+                <p>
+                    Check out the <a class="repo__link" href="https://github.com/Snapcaszz/CoupleWays">GitHub repository</a> to explore the code and experience the future of trip planning with
+                    Couple Ways!"
+                </p>
+            </article>
+
+            <section>
+                <article class="project__meta-group">
+                    <h3 class="project__heading project__heading--meta">Technologies used</h3>
+
+                    <ul class="technology-list">
+                        <li class="technology-list__item">Python</li>
+                        <li class="technology-list__item">Flask</li>
+                        <li class="technology-list__item">HTML</li>
+                        <li class="technology-list__item">CSS</li>
+                        <li class="technology-list__item">JavaScript</li>
+                        <li class="technology-list__item">MongoDB</li>
+                    </ul>
+                </article>
+
+                <a class="cta" href="{{ project['prod'] }}">
+                    <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                    View in production
+                </a>
+                <a class="cta" href="https://github.com/Snapcaszz/CoupleWays">
+                    <img class="cta__icon" src="{{ url_for('static', filename='img/pointer.svg') }}">
+                    GitHub
+                </a>
+            </section>
+        </article>
+    </div>
+</main>
+{% endblock %}

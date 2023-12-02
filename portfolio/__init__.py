@@ -5,35 +5,11 @@ app=Flask(__name__)
 
 projects = [
     {
-        "name": "Habit tracking app with Python and MongoDB",
-        "thumb": "img/habit-tracking.png",
-        "hero": "img/habit-tracking-hero.png",
-        "categories": ["python", "web"],
-        "slug": "habit-tracking",
-        "prod": "#",
-    },
-    {
-        "name": "Personal finance tracking app with React",
-        "thumb": "img/personal-finance.png",
-        "hero": "img/personal-finance.png",
-        "categories": ["react", "javascript"],
-        "slug": "personal-finance",
-        "prod": "#",
-    },
-    {
-        "name": "REST API Documentation with Postman and Swagger",
-        "thumb": "img/rest-api-docs.png",
-        "hero": "img/rest-api-docs.png",
-        "categories": ["writing"],
-        "slug": "api-docs",
-        "prod": "#",
-    },
-        {
-        "name": "REST API Documentation with Postman and Swagger",
-        "thumb": "img/rest-api-docs.png",
-        "hero": "img/rest-api-docs.png",
-        "categories": ["writing"],
-        "slug": "api-docs",
+        "name": "Couple Ways - Trip Planner with Python and MongoDB",
+        "thumb": "img/couple_ways_thumb.jpg",
+        "hero": "img/couple_ways-hero.jpg",
+        "categories": ["python", "flask", "web"],
+        "slug": "couple-ways",
         "prod": "#",
     },
 ]
